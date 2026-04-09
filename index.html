@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roopa Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script language="javascript">
+        let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+             <img src="assets/r.jpg" width="80px" height="80px"><br>
+            <h1>Roopa Venkatalakshmaiah</h1>
+            <p>WEB DEVELOPER</p>
+            <div class="smicons">
+                <a href="https://www.linkedin.com/in/roopa-v-30963a269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="assets/linkedin.png" width="50px" height="50px"></a>
+                
+                <a href="mailto:vroopait@gmail.com"><img src="assets/e.png" width="50px" height="50px"></a>
+                <a href="https://wa.me/919786206743?text=Hey i saw your portfolio"><img src="assets/whatsapp.webp" width="60px" height="55px"></a>
+            </div>
+        </div>
+        <a href="vr-resume.pdf" download class="btn btn--download">DOWNLOAD RESUME</a>
+    </header>
+    <section class="personal-details">
+        <div class="profile-photo">
+            <img src="assets/roopav.jpg" alt="roopa">
+        </div>
+        <div class="details">
+            <h2>Personal Details</h2>
+            
+            <p width="500px">Information Technology graduate with hands-on experience in web development and software engineering. Proficient in HTML, CSS, JavaScript, PHP, Python, and MySQL, with foundational knowledge of React. Experienced in building responsive web applications and developing real-time and machine learning-based projects through academic and internship experience. Strong problem-solving, debugging, and collaboration skills, with a commitment to continuous learning and delivering efficient, scalable solutions.
+        </p>
+            <div class="icons">
+                <div class="icon">
+                    <img src="assets/profile.webp" width="50px" height="50px"><br>
+                    <span>Profile</span>
+                    <p>Creative coder with a knack for design and usability.</p>
+                </div>
+                <div class="icon">
+                     <img src="assets/address.jpg" width="50px" height="50px"><br>
+                    <span>Address</span>
+                    <p>Thiruchipalli village,Hosur,Krishnagiri,TamilNadu,India.</p>
+                </div>
+                <div class="icon">
+                     <img src="assets/hobby.jpg" width="50px" height="50px"><br>
+                    <span>Hobbies & Interests</span>
+                    <p>Drawing,cooking,listening music and Tech Gadgets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <h2>What I'm Best At </h2>
+       
+        <div class="whatiknow">
+            <div class="frontend">
+                <h1>Front End</h1>
+            <h2><img src="assets/html.png" width="80px" height="80px">HTML</h2>
+            <h2><img src="assets/css.png" width="80px" height="80px">CSS</h2>
+            <h2><img src="assets/JavaScript-logo.png" width="80px" height="80px">JavaScript</h2>
+        </div>
+        <div class="backend">
+            <h1>Back End</h1>
+            <h2><img src="assets/php.png" width="80px" height="80px">Php</h2>
+            <h2><img src="assets/python.png" width="80px" height="80px">Python</h2>
+            <h2><img src="assets/node.png" width="80px" height="80px">Node.js</h2>
+        </div>
+        <div class="db">
+            <h1>Database</h1>
+             <h2><img src="assets/mysql.png" width="80px" height="80px">MySql</h2>
+             <h2><img src="assets/sql.png" width="80px" height="80px">Sql</h2>
+        </div>
+        <div class="other">
+            <h1>Other</h1>
+            <h2><img src="assets/git.png" width="80px" height="80px">Github</h2>
+            <h2><img src="assets/vscode.png" width="80px" height="80px">Vscode</h2>
+            <h2><img src="assets/canva.jpg" width="80px" height="80px">Canva</h2>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="projects">
+            <h1>Works & Services</h1>
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <div class="project">
+             <h2>Creative Kids Learning WebPage (HTML, CSS, JAVA SCRIPT)</h2>
+             <br>
+                           <video width="500px" height="300px" src="assets/video1.mp4" controls autoplay ></video>
+                           <p> Developed a kids learning webpage using HTML,CSS and JAVA SCRIPT</p>
+                        <p>This webpage includes some kids videos and also music player</p>
+                            <p>Implemented dynamic features to attract kids</p>
+            </div>
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <div class="project">
+             <h2> Numerology Calculator (HTML, CSS, JAVA SCRIPT,PHP)</h2><br>
+                           <video width="500px" height="300px" src="assets/video2.mp4" controls autoplay ></video>
+                         <p>Developed a Numerology Calculator webpage using HTML,CSS, JAVA SCRIPT and PHP</p>
+                         <p>This webpage presents calculating your numerology number usiing your name</p>
+
+        </div>
+   
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <div class="project">
+             <h2>Simple Classroom Webpage(HTML, CSS, JAVA SCRIPT, PHP, MYSQL)</h2><br>
+                           <video width="500px" height="300px" src="assets/video3.mp4" controls autoplay ></video>
+                        <p> Developed a simple classroom webpage using HTML,CSS,JAVA SCRIPT,PHP and MYSQL</p>
+                         <p>Implemented dynamic features to make sharing files easily</p>
+                         <p>Image and file uploading webpage</p>
+
+        </div>
+    
+  </div>
+     <div class="mySlides fade">
+         <div class="numbertext">4 / 6</div>
+     <div class="project">
+             <h2>To-Do List (HTML, CSS, JAVA SCRIPT)</h2><br>
+                           <video width="500px" height="300px" src="assets/video4.mp4" controls autoplay ></video>
+                        <p> Developed a To-Do List webpage using HTML,CSS,JAVA SCRIPT</p>
+                         <p>Implemented dynamic features to perform your task</p>
+                         <p>Track your work</p>
+                         <p>Easy to set remainders and get complete your work</p>
+
+        </div>
+    </div>
+    <div class="mySlides fade">
+         <div class="numbertext">5 / 6</div>
+    <div class="project">
+             <h2> Real-Time Language Translator(HTML, CSS, JAVA SCRIPT)</h2><br>
+                           <video width="500px" height="300px" src="assets/video5.mp4" controls autoplay ></video>
+                         <p>Developed a Real-Time Language Translation webpage using HTML,CSS,JAVA SCRIPT</p>
+                         <p>Implemented dynamic features to speak and understand multiple languages</p>
+                         <p>Text and volume translation</p>
+
+        </div>
+  </div>
+  <div class="mySlides fade">
+     <div class="numbertext">6 / 6</div>
+    <div class="project">
+             <h2> Expense Tracker(HTML, CSS, JAVA SCRIPT)</h2><br>
+                           <video width="500px" height="300px" src="assets/video6.mp4" controls autoplay ></video>
+                        <p> Developed a Expense Tracker webpage using HTML,CSS,JAVA SCRIPT</p>
+                         <p>Implemented dynamic features to track your expenses</p>
+                         <p>Keep your expense within limit</p>
+
+        </div>
+  </div>
+
+ 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+    </div>
+</section>
+    <section class="career">
+        <h2>My Education</h2>
+        <div class="education">
+        <div class="clg">
+                    <h1>Adhiyamaan College Of Engineering,Hosur</h1>
+                    <h3 >BTech- Information Technology <br> 2021 - 2025</h3>
+                    <h4>Grade: 9.15 CGPA</h4>
+
+        </div>
+        <div class="secondary">
+                    <h1>Sri Vijay Vidhyala Higher Secondary School, Hosur</h1>
+                    <h3>HSC- XII(std) (BIO-MATHS) <br> 2020 - 2021 </h3>
+                    <h4>Grade: 93.8%</h4>
+                    
+        </div>
+        <div class="school">
+                    <h1>ST.Augustine Matriculation Higher Secondary School,Onnalvadi</h1>
+                    <h3>SSLC - Xth(std)<br> 2018 - 2019 </h3>
+                    <h4>Grade:93.8%</h4>
+            
+        </div>
+    </div>
+    </section>
+    <section>
+        <div class="contact">
+            <h1>Contact Me</h1>
+            <form method="POST" action="mailto:vroopait@gmail.com" >
+            <div id="inputs">
+                <h2>Email me</h2>
+                <input type="email" name="email" placeholder="Your Email" required class="ip"> <br> <br>
+                <input type="text" name="name" placeholder="Your Name" required class="ip"> <br> <br>
+                <input type="text" name="subject" placeholder="Subject" required class="ip"> <br> <br>
+                <textarea name="msg" placeholder="Message" required class="ip"></textarea> <br> <br>
+                <button type="submit" class="button">Send</button>
+            </div>
+            </form>
+            <div class="footer">
+                <h2>Contact Details:</h2>
+                <h3>Contact : +91 9786206743</h3>
+                <h3>Email : vroopait@gmail.com</h3>
+            </div>
+            <div class="socialmedia">
+                <h2>Social Media Contacts:</h2>
+                <h3>Know me more and more</h3>
+                <a href="https://www.linkedin.com/in/roopa-v-30963a269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="assets/linkedin.png" width="50px" height="50px"></a>
+                
+                <a href="mailto:vroopait@gmail.com"><img src="assets/e.png" width="50px" height="50px"></a>
+                <a href="https://wa.me/919786206743?text=Hey i saw your portfolio"><img src="assets/whatsapp.webp" width="60px" height="55px"></a>
+            </div>
+            <h3 >Feel free to reach out to me for any questions or opportunities!🚀</h3>
+            <h2 id="end">copyrights &copy;roopavportfolio webpage</h2>
+        </div>
+    </section>
+</body>
+</html>
+ 

@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-image: url(https://wallpaperaccess.com/full/1947484.jpg);
+    height:380px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.header-content img{
+    border-radius: 50%;
+}
+.header-content h1 {
+     font-size: 3em;
+}
+
+.header-content p {
+    font-size: 1.5em;
+}
+.smicons{
+    display:inline-flex;
+    flex-wrap: wrap;
+ 
+}
+.smicons img{
+ padding-inline: 10px;
+}
+ .btn--download{
+    
+    font-size: 16px;
+    position:relative;
+    font-family: roboto;
+    position: relative;
+    top:30px;
+    background-color:black;
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    border-radius: 50px;
+}
+.personal-details {
+    text-align:center;
+    padding: 30px 150px 0 150px;
+    background-color:lightgrey;
+
+}
+
+.profile-photo img {
+    border-radius: 60%;
+    border-color:10px whitesmoke;
+    height:250px;
+    align-content: center;
+}
+
+.details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.skills {
+    background-image: url(https://wallpaperaccess.com/full/3239480.jpg);
+    padding: 50px 0;
+    color:white;
+}
+.skills h2{
+    text-align: center;
+}.whatiknow{
+display:inline-flex;
+    flex-wrap:wrap ;
+    padding-top: 50px;
+}
+.frontend,.backend,.db,.other{
+    display:block;
+    flex-wrap:wrap ;
+    padding-inline: 100px;
+
+}
+.projects{
+    background-color: lightgrey;
+     padding: 30px 0;
+     text-align: center;
+}
+
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position:relative;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.career {
+    background-image: url(https://wetalkenglishacademy.com/images/slides/slider-02.jpg);
+    padding: 50px 0;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+.career h2{
+   font-size:40px;
+}
+
+.education {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 0;
+}
+.contact{
+    background-color:grey;
+    padding:30px 0;
+    text-align: center;
+}
+.contact h1{
+    text-align: center;
+}
+
+#inputs{
+    padding:50px 70px 30px 50px;
+    margin: 50px 0px 0 260px ;
+    background-color: black;
+    margin-left: 530px;
+    min-height: 500px;
+    width:25%;
+    padding: 40px;
+    border-radius: 10px;
+    color:white;
+}
+#inputs h2{
+    font-size: 25px;
+    text-align: center;
+}
+#inputs button{
+ 
+  width: 80px;
+     height: 30px;
+     border-radius: 50px;
+
+}
+.ip {
+     margin-left:20px;
+     color: black;
+     width: 250px;
+     height: 20px;
+     font-size: 16px;
+     padding: 10px;
+     border-radius: 80px;
+ }
+
+ .contact h2,h3{
+    text-align: center;
+ }
